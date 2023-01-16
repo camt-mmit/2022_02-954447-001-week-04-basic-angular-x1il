@@ -1,0 +1,28 @@
+*{
+    margin: auto 5%;
+}
+
+.data {
+  display: inline-flex;
+  flex-direction: row;
+  width: 20ch;
+  align-self: center;
+}
+  
+.data::after {
+    content: '::';
+    color: blue;
+    text-align: right ;
+    flex: 1 0 auto;
+    padding-left: 1ch;
+    padding-right: 1ch;
+  }
+
+ .information > label{
+  grid-template-columns: 1fr auto;
+}
+
+.information{
+    display: grid;
+    row-gap: 2px;
+}
